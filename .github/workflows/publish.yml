@@ -13,9 +13,6 @@ jobs:
      password: ${{ secrets.GITHUB_TOKEN }}
   - name: Build the hello-docker Docker image
     run: |
-      with:
-        # relative path to the place where source code with Dockerfile is located
-        context: ./sample-packages/docker
        docker build . --tag ghcr.io/moritzlilleby/exercise-publish-package:latest
        docker run ghcr.io/moritzlilleby/exercise-publish-package:latest
        docker push ghcr.io/moritzlilleby/exercise-publish-package:latest
