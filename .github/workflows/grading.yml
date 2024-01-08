@@ -7,27 +7,14 @@ on:
 
 jobs:
   grade-learner:
-    if: github.event_name == 'registry_package' # Apply additional filters as needed
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
 
-      - name: Grade exercise-publish-package activity
-        id: events
-        uses: ./.github/actions/local-action
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          event_ctx: ${{toJSON(github.event)}}
-
-      - name: Grading results
-        uses: githubtraining/looking-glass-action@v1.0.0
-        with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
-          feedback: ${{ steps.events.outputs.reports }}
-  troubleshoot-activity:
-    if: github.event_name == 'workflow_dispatch'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
+          node-version: 16
 
       - name: Grade exercise-publish-package activity
         id: events
