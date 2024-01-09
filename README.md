@@ -2,6 +2,8 @@
 
 [![Grading workflow](https://github.com/MoritzLilleby/exercise-publish-package/actions/workflows/grading.yml/badge.svg)](https://github.com/MoritzLilleby/exercise-publish-package/actions/workflows/grading.yml)
 
+[![Check Markdown links](https://github.com/MoritzLilleby/exercise-publish-package/actions/workflows/link-checker.yml/badge.svg)](https://github.com/MoritzLilleby/exercise-publish-package/actions/workflows/link-checker.yml)
+
 
 # Welcome to the exercise on publishing packages!
 
