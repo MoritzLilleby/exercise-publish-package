@@ -1,5 +1,4 @@
-![main](https://github.com/mona/special-octo-eureka/actions/workflows/grading.yml/badge.svg?branch=my-workflow)
-
+[![Create and publish a Docker image](https://github.com/MoritzLilleby/exercise-publish-package/actions/workflows/publish.yml/badge.svg)](https://github.com/MoritzLilleby/exercise-publish-package/actions/workflows/publish.yml)
 # Welcome to the exercise on publishing packages!
 
 This exercise checks your ability to publish to a GitHub Packages registry. It is automatically graded via a workflow once you have completed the instructions.
